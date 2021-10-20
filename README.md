@@ -9,5 +9,9 @@ find path/to/folder -type f -a \( -name "*.ext1" -o -name "ext2" \) -a -exec sed
 find path/to/top/dir -type f -a \( -name "*.cc" -o -name ".h" \) -a -exec sed -i -e "s///g" {} + 
 ```
 
+Remove a file suffix
+```
+find /some/dir/ -type f -name "*.SUFFIX" -delete 
+```
 
 
